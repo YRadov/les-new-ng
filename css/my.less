@@ -14,6 +14,11 @@ h1,h2,h3,h4,h5,h6,
   text-align: center;
 }
 
+hr{
+  margin: 0;
+  border-top: 1px solid rgba(255,0,0,1);
+}
+//--------------------------------------------
 .main-wrapper
 {
   position: relative;
@@ -21,8 +26,38 @@ h1,h2,h3,h4,h5,h6,
 
 .app
 {
-  background-color: white;
+  background-color: #2aabd2;
   margin: 0 auto;
   height: 100%;
   width: 320px;
 }
+
+.keyboard
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  .fa-plus-square,
+  .fa-minus-square,
+  .fa-arrow-left{
+    color: red;
+  }
+
+  .fa-level-down,
+  .fa-forward{
+    color: green;
+  }
+
+
+}//.keyboard
+
+.total-main-data
+{
+  span{
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0 2px;
+  }
+}//.total-main-data
