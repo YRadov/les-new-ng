@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="lesModule">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-<div class="container main-wrapper">
+<div class="container main-wrapper" ng-controller="LesCtrl">
     <div class="container app">
         <!-- ВЕРХНИЕ ДАТЧИКИ -->
         <div class="row total-main-data">
@@ -29,7 +29,7 @@
         <hr>
         <!-- ИНФОРМАЦИОННОЕ ПОЛЕ -->
         <div class="row">
-
+            <input type="text" ng-model="diam">
         </div>
         <!-- ПОЛЕ ДАТЧИКОВ -->
         <div class="row">
@@ -49,25 +49,25 @@
         </div>
     </div><!-- .app -->
     <div class="keyboard row">
-        <table class="table table-bordered  table-inverse">
+        <table class="table table-bordered table-inverse">
             <tr>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
+                <td ng-click="addDiam(6)">6</td>
+                <td ng-click="addDiam(7)">7</td>
+                <td ng-click="addDiam(8)">8</td>
+                <td ng-click="addDiam(9)">9</td>
                 <td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
+                <td ng-click="addDiam(2)">2</td>
+                <td ng-click="addDiam(3)">3</td>
+                <td ng-click="addDiam(4)">4</td>
+                <td ng-click="addDiam(5)">5</td>
                 <td><i class="fa fa-forward" aria-hidden="true"></i></td>
             </tr>
             <tr>
-                <td>0</td>
-                <td>1</td>
-                <td><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
+                <td ng-click="addDiam(0)">0</td>
+                <td ng-click="addDiam(1)">1</td>
+                <td ng-click="removeDiam()"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
                 <td><i class="fa fa-level-down" aria-hidden="true"></i></td>
                 <td><i class="fa fa-minus-square" aria-hidden="true"></i></td>
             </tr>
@@ -83,9 +83,10 @@
 <script src="js/angular.min.js"></script>
 <script src="js/app.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script>
     //$('body').css('background-color','red');
 </script>
+
 </body>
 </html>

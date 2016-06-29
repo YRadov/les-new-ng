@@ -1,0 +1,54 @@
+html,
+body,
+.main-wrapper {
+  background-color: #1f7e9a;
+  height: 100%;
+  width: 100%;
+}
+.main-wrapper,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.app {
+  text-align: center;
+}
+hr {
+  margin: 0;
+  border-top: 1px solid #ff0000;
+}
+.table-inverse {
+  color: #eceeef;
+  background-color: #373a3c;
+}
+.main-wrapper {
+  position: relative;
+}
+.app {
+  background-color: #2aabd2;
+  margin: 0 auto;
+  height: 100%;
+  width: 320px;
+}
+.keyboard {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.keyboard .fa-plus-square,
+.keyboard .fa-minus-square,
+.keyboard .fa-arrow-left {
+  color: red;
+}
+.keyboard .fa-level-down,
+.keyboard .fa-forward {
+  color: green;
+}
+.total-main-data span {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0 2px;
+}
